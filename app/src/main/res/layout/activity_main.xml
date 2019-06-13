@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_root"
+    >
+
+    <com.zzj.dragfloatprograssview.view.NestedScrollingDetailContainer
+        android:id="@+id/nested_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <com.zzj.dragfloatprograssview.view.NestedScrollingWebView
+            android:id="@+id/web_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="nested_scroll_webview" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="nested_scroll_recyclerview" />
+    </com.zzj.dragfloatprograssview.view.NestedScrollingDetailContainer>
+
+
+    <TextView
+        android:text="评论区"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="42dp"
+        android:layout_width="wrap_content"/>
+
+    <com.zzj.dragfloatprograssview.view.DragFloatActionView
+        android:id="@+id/dfav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="10dp"
+        >
+
+    </com.zzj.dragfloatprograssview.view.DragFloatActionView>
+</android.support.constraint.ConstraintLayout>

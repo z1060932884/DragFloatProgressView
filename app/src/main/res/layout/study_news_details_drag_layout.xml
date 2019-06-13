@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="false"
+
+    >
+<FrameLayout
+    android:id="@+id/fl_integral"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:layout_gravity="center_horizontal"
+    android:visibility="gone"
+>
+  <TextView
+      android:id="@+id/tv_integral"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="+ 20"
+      android:textColor="@android:color/holo_red_light"
+      android:textStyle="bold"
+      android:textSize="24dp"
+      android:gravity="center"
+      android:layout_gravity="center_horizontal|bottom"
+  />
+</FrameLayout>
+ <FrameLayout
+     android:layout_width="60dp"
+     android:layout_height="60dp"
+     android:background="@drawable/study_news_detailas_fab_bg"
+ >
+
+   <com.zzj.dragfloatprograssview.view.QMUIProgressBar
+       android:id="@+id/pb_time"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       app:qmui_stroke_width="4dp"
+       app:qmui_type="type_circle"
+       app:qmui_progress_color="#DEE0E2"
+       app:qmui_background_color="#F5F5F5"
+       app:qmui_progress_startColor="#ff6200"
+       app:qmui_progress_midColor="#ff6200"
+       app:qmui_progress_endColor="#ff6200"
+       app:qmui_stroke_round_cap="true"
+       android:layout_centerInParent="true"
+       android:layout_gravity="center"
+   />
+   <ImageView
+       android:layout_width="37dp"
+       android:layout_height="37dp"
+       android:layout_gravity="center"
+       android:visibility="gone"
+
+   />
+
+   <ImageView
+       android:id="@+id/fab_view"
+       android:layout_width="21dp"
+       android:layout_height="21dp"
+       android:src="@mipmap/ic_launcher_round"
+       android:layout_gravity="center"
+   />
+   <TextView
+       android:id="@+id/tv_ios_integral"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="+ 20"
+       android:textColor="@android:color/holo_red_light"
+       android:textStyle="bold"
+       android:textSize="14dp"
+       android:gravity="center"
+       android:layout_gravity="center"
+       android:visibility="gone"
+   />
+ </FrameLayout>
+
+</LinearLayout>

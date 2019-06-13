@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StudyQMUIProgressBar">
+        <attr format="enum" name="qmui_type">
+            <enum name="type_rect" value="0"/>
+            <enum name="type_circle" value="1"/>
+        </attr>
+        <attr format="color" name="qmui_progress_color"/>
+        <attr format="color" name="qmui_background_color"/>
+        <attr format="integer" name="qmui_max_value"/>
+        <attr format="integer" name="qmui_value"/>
+        <attr format="dimension" name="qmui_stroke_width"/>
+        <attr format="boolean" name="qmui_stroke_round_cap"/>
+        <!--渐变色起始色-->
+        <attr name="qmui_progress_startColor" format="color" />
+        <!--渐变色中间色-->
+        <attr name="qmui_progress_midColor" format="color" />
+        <!--渐变色起始色-->
+        <attr name="qmui_progress_endColor" format="color" />
+        <attr name="android:textSize"/>
+        <attr name="android:textColor"/>
+    </declare-styleable>
+</resources>
