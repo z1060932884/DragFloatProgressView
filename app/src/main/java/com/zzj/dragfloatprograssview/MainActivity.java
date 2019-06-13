@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
         webView.setWebChromeClient(new WebChromeClient());
-        webView.loadUrl("https://article.xuexi.cn/articles/index.html?art_id=6434648762221416133");
+        webView.loadUrl("https://github.com/z1060932884/DragFloatProgressView");
 //        webView.loadUrl("http://www.baidu.com");
     }
 
